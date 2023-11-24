@@ -8,12 +8,12 @@
  */
 
 function displayArray (tab) {
+    let element = document.getElementById ('result');
     let out = '<div class="card result">\n<table class="display">\n<tr>\n';
-    tab.forEach ((item, index) => {
-        out += '<td>' + item + '</td>\n';
-    });
+    tab.forEach ((item, index) => { out += '<td>' + item + '</td>\n';});
     out += '</tr>\n</table>\n</div>';
-    document.writeln (out);
+    element.innerHTML = out;
+
 }
 
 
